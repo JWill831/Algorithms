@@ -15,4 +15,7 @@ def threeNumberSum(array, targetSum):
 					right -= 1
 			elif temp<targetSum:
 					left += 1
+            
 	return ans
+
+print(threeNumberSum([2,4,-7,11,1,6],8))
