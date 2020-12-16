@@ -28,7 +28,7 @@
 # Explanation: s can be split into "RL", "RRRLLRLL", since each substring contains an equal number of 'L' and 'R'
 
 def balancedStringSplit(s):
-    m=0
+   m=0
     count=0
     for i in s:
         if i == "L":

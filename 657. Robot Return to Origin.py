@@ -7,9 +7,9 @@
 # Example 1:
 
 # Input: "UD"
-# Output: true 
+# Output: true
 # Explanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true.
- 
+
 
 # Example 2:
 
@@ -24,16 +24,16 @@ def judgeCircle(moves: str) -> bool:
     #     su += dic[c]
     # return su == 0
 
-    sum1=0
-    sum2=0
-    ans=sum1+sum2
+    sum1 = 0
+    sum2 = 0
+    ans = sum1+sum2
     for c in moves:
         if c == 'R' or 'L':
-            sum1+=c
+            sum1 += c
         if c == 'U' or 'D':
-            sum2+=c
-    ans=sum1+sum2
+            sum2 += c
+    ans = sum1+sum2
     return ans == 0
 
-print(judgeCircle("UD"))
 
+print(judgeCircle("UD"))
